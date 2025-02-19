@@ -22,7 +22,10 @@ import titanic5 from "../assets/images/titanic5.png"
 import indowonder1 from "../assets/images/indowonder1.png"
 import indowonder2 from "../assets/images/indowonder2.png"
 import indowonder3 from "../assets/images/indowonder3.png"
-
+import system1 from "../assets/images/System1.png"
+import system2 from "../assets/images/System2.png"
+import system3 from "../assets/images/System3.png"
+import system4 from "../assets/images/System4.png"
 
 
 const projectsData = [
@@ -120,6 +123,46 @@ const projectsData = [
     id: 6,
     name: "IndoWonder UI/UX Design",
     year: 2023,
+    images: [indowonder1,indowonder2,indowonder3],
+    description: [
+      "Indowonder is a travel booking application designed to help users easily find and purchase tickets for tourist attractions, transportation, and accommodations. Created for an inter-university UI/UX competition, this project aimed to deliver an intuitive and visually appealing design that enhances the travel planning experience. Using the Design Thinking methodology, the design process involved user research, problem identification, ideation, prototyping, and testing to ensure a seamless and efficient user experience.",
+      "The UI/UX design, developed using Figma, features a clean and modern interface with intuitive navigation, personalized recommendations for hidden tourist destinations, and a seamless booking flow. The design prioritizes accessibility, responsiveness, and ease of use, making travel planning more convenient for users. This project showcases my ability to create user-centered designs that balance aesthetics and functionality while addressing real-world user needs.",
+    ],
+    tools: ["UI/UX Design", "Figma"],
+    links: [
+      {
+        name: "Figma Prototype",
+        url: "https://www.figma.com/design/de9uW8aKmTug8rthaN01uO/Untitled?node-id=0-1&t=6WvEaQsmHPDM2V39-0",
+        icon: "fab fa-figma",
+      }
+    ],
+  },
+  {
+    id: 7,
+    name: "System Implementation Website",
+    year: 2024,
+    images: [system1,system2,system3,system4],
+    description: [
+      "UI/UX Design of Indowonder Aplication : create a UI/UX design that is beautiful and easy to understand by users so that it can support   users when using the Indowonder application, and this UI/UIX is designed using the Design Thinking method.",
+    ],
+    tools: ["UI/UX Design", "Figma", "Django", "Python", "HTML", "CSS", "JavaScript"],
+    links: [
+      {
+        name: "Figma Prototype",
+        url: "https://www.figma.com/design/zR0VlNt4MocEtYtI4PH5EQ/SI?node-id=0-1&p=f&t=FuSzHQKD8vVniAmr-0",
+        icon: "fab fa-figma",
+      },
+      {
+        name: "GitHub Repository",
+        url: "https://github.com/2AM-Labs/Titanic-Survival-Prediction?tab=readme-ov-file",
+        icon: "fab fa-github",
+      }
+    ],
+  },
+  {
+    id: 8,
+    name: "Portofolio Website",
+    year: 2025,
     images: [indowonder1,indowonder2,indowonder3],
     description: [
       "Indowonder is a travel booking application designed to help users easily find and purchase tickets for tourist attractions, transportation, and accommodations. Created for an inter-university UI/UX competition, this project aimed to deliver an intuitive and visually appealing design that enhances the travel planning experience. Using the Design Thinking methodology, the design process involved user research, problem identification, ideation, prototyping, and testing to ensure a seamless and efficient user experience.",
