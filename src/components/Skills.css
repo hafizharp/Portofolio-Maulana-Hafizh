@@ -1,0 +1,121 @@
+
+.skills-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #333333;
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.section-title .highlight {
+  color: #007bff;
+  text-shadow: 2px 2px 5px rgba(0, 123, 255, 0.5);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 25px;
+  justify-content: center;
+  padding: 20px 150px;
+  max-width: 1200px;
+  margin: 0 auto;
+  counter-reset: skill-index;
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  opacity: 0; 
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: calc(var(--index) * 0.1s); 
+}
+
+.skill-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.skill-card i {
+  font-size: 2rem;
+  margin-bottom: 8px;
+  transition: transform 0.5s ease;
+}
+
+
+.skill-card.animate i {
+  animation: spin 0.5s ease;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.skill-card p {
+  font-size: 0.9rem;
+  color: #333333;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    padding: 20px 20px;
+  }
+
+  .skill-card {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skill-card i {
+    font-size: 1.8rem;
+  }
+
+  .skill-card p {
+    font-size: 0.8rem;
+  }
+}

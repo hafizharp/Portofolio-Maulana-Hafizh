@@ -1,0 +1,43 @@
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+
+.main-content {
+  flex: 1; 
+  padding: 20px; 
+  overflow: auto; 
+}
+
+
+footer {
+  flex-shrink: 0; 
+  background-color: #333; 
+  color: white; 
+  text-align: center;
+  padding: 1rem 0; 
+  width: 100%;
+  position: relative; 
+  bottom: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 10px; 
+  }
+
+  footer {
+    padding: 0.5rem 0; 
+  }
+}
