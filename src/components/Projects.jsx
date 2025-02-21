@@ -26,6 +26,8 @@ import system1 from "../assets/images/System1.png"
 import system2 from "../assets/images/System2.png"
 import system3 from "../assets/images/System3.png"
 import system4 from "../assets/images/System4.png"
+import porto1 from "../assets/images/porto1.png"
+import porto2 from "../assets/images/porto2.png"
 
 
 const projectsData = [
@@ -143,9 +145,9 @@ const projectsData = [
     year: 2024,
     images: [system1,system2,system3,system4],
     description: [
-      "UI/UX Design of Indowonder Aplication : create a UI/UX design that is beautiful and easy to understand by users so that it can support   users when using the Indowonder application, and this UI/UIX is designed using the Design Thinking method.",
+      "This project is a web-based platform designed to simplify the deployment and management of intelligent system projects. Built with Django as the backend, the system enables users to efficiently create, configure, and deploy AI-based applications. It offers various features, including user authentication, AI model management, API integration, and real-time system monitoring. With Django ORM handling database management, the platform ensures efficient storage and processing of models. Additionally, its RESTful API allows seamless integration with other applications. Overall, this project aims to provide a comprehensive solution for developers looking to structure and implement AI projects more effectively and efficiently.",
     ],
-    tools: ["UI/UX Design", "Figma", "Django", "Python", "HTML", "CSS", "JavaScript"],
+    tools: ["UI/UX Design", "Figma", "Django", "Python", "HTML", "CSS", "JavaScript", "Git"],
     links: [
       {
         name: "Figma Prototype",
@@ -154,7 +156,7 @@ const projectsData = [
       },
       {
         name: "GitHub Repository",
-        url: "https://github.com/2AM-Labs/Titanic-Survival-Prediction?tab=readme-ov-file",
+        url: "https://github.com/hafizharp/System-Implementation",
         icon: "fab fa-github",
       }
     ],
@@ -163,12 +165,11 @@ const projectsData = [
     id: 8,
     name: "Portofolio Website",
     year: 2025,
-    images: [indowonder1,indowonder2,indowonder3],
+    images: [porto1,porto2],
     description: [
-      "Indowonder is a travel booking application designed to help users easily find and purchase tickets for tourist attractions, transportation, and accommodations. Created for an inter-university UI/UX competition, this project aimed to deliver an intuitive and visually appealing design that enhances the travel planning experience. Using the Design Thinking methodology, the design process involved user research, problem identification, ideation, prototyping, and testing to ensure a seamless and efficient user experience.",
-      "The UI/UX design, developed using Figma, features a clean and modern interface with intuitive navigation, personalized recommendations for hidden tourist destinations, and a seamless booking flow. The design prioritizes accessibility, responsiveness, and ease of use, making travel planning more convenient for users. This project showcases my ability to create user-centered designs that balance aesthetics and functionality while addressing real-world user needs.",
+      "This is a personal portfolio website built with React.js to showcase information about me, including skills, projects, certificates, and contact details. The website features a modern, responsive design and interactive animations for an enhanced user experience. Key features include a contact form powered by Formspree, direct WhatsApp integration for instant messaging, and an SEO-friendly structure. Built using React.js, CSS, and FontAwesome, this website is designed to be fast, lightweight, and visually appealing.",
     ],
-    tools: ["UI/UX Design", "Figma"],
+    tools: ["React", "HTML", "CSS", "JavaScript", "SEO", "Git"],
     links: [
       {
         name: "Figma Prototype",

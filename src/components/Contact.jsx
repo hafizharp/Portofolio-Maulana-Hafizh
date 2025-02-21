@@ -14,9 +14,9 @@ const Contact = () => {
 
   const sendToWhatsApp = (e) => {
     e.preventDefault();
-    
+
     const { name, email, message } = formData;
-    
+
     if (!name || !email || !message) {
       alert("Please fill out all fields before sending.");
       return;
@@ -32,6 +32,7 @@ const Contact = () => {
   return (
     <section className="contact-section">
       <div className="contact-container">
+        {/* Contact Information */}
         <div className="contact-info">
           <h2 className="contact-title">
             Contact <span className="highlight">Me</span>
@@ -61,6 +62,7 @@ const Contact = () => {
           </ul>
         </div>
 
+        {/* Contact Form */}
         <div className="contact-form-container">
           <form className="contact-form" onSubmit={sendToWhatsApp}>
             <h3 className="form-title">Send Message</h3>

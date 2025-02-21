@@ -32,7 +32,7 @@ const About = () => (
 
     <div className="about-description-container">
       <p className="about-description">
-        I am a passionate and dedicated Information Technology student at Universitas Trisakti with a strong interest in web development and data analysis. Throughout my academic journey, I have worked on various projects involving web application development, artificial intelligence, and database management. My expertise lies in building scalable and efficient web applications using Django, alongside proficiency in programming languages such as Python, Java, and JavaScript. Additionally, I have a solid understanding of front-end and back-end development, utilizing HTML, CSS, and JavaScript to create dynamic and responsive websites.
+        I am a passionate and dedicated Information Technology student at Universitas Trisakti with a strong interest in web development and data analysis. Throughout my academic journey, I have worked on various projects involving web application development, artificial intelligence, and database management.
       </p>
       <p className="about-description">
         Beyond web development, I have experience in data analysis and machine learning, where I have implemented predictive models and automated data processing using Python. My ability to manage and analyze data has helped optimize decision-making and enhance system performance. I am also well-versed in database management using MySQL, ensuring effective data organization and security.

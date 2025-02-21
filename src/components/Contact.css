@@ -1,40 +1,42 @@
-
+/* General Styles */
 .contact-section {
-  padding: 50px 20px;
+  padding: 60px 20px;  /* Mengurangi padding agar lebih dekat ke navbar */
   background-color: #f8f9fa;
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 85vh; /* Mengurangi tinggi agar lebih pas */
 }
 
 .contact-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  max-width: 1200px;
+  gap: 40px; /* Sedikit lebih kecil */
+  max-width: 1100px; /* Lebar lebih standar */
   width: 100%;
 }
 
+/* Contact Information */
 .contact-info {
   text-align: left;
 }
 
 .contact-title {
-  font-size: 2.5rem;
+  font-size: 2.2rem;  /* Sedikit lebih kecil */
   font-weight: bold;
   color: #333;
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Mengurangi jarak */
   font-family: "Poppins", sans-serif;
 }
 
 .contact-title .highlight {
   color: #007bff;
-  text-shadow: 2px 2px 5px rgba(0, 123, 255, 0.5);
+  text-shadow: 1px 1px 5px rgba(0, 123, 255, 0.4);
 }
 
 .contact-description {
-  font-size: 1rem;
-  color: #666;
+  font-size: 1rem;  /* Ukuran lebih standar */
+  color: #555;
   margin-bottom: 20px;
   line-height: 1.6;
 }
@@ -45,18 +47,19 @@
 }
 
 .contact-details li {
-  margin-bottom: 15px;
+  margin-bottom: 15px; /* Jarak lebih kecil */
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-size: 1rem;
-  color: #555;
+  gap: 10px; /* Jarak ikon lebih kecil */
+  font-size: 1rem; /* Ukuran lebih kecil */
+  color: #444;
 }
 
 .contact-details a {
   color: #007bff;
   text-decoration: none;
   transition: color 0.3s ease;
+  font-size: 1rem;
 }
 
 .contact-details a:hover {
@@ -65,24 +68,28 @@
 
 .contact-details i {
   color: #007bff;
-  font-size: 1.2rem;
+  font-size: 1.2rem; /* Sedikit lebih kecil */
 }
 
 /* Contact Form */
 .contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: left;
 }
 
 .contact-form {
   width: 100%;
+  max-width: 500px; /* Lebar lebih pas */
   background: #ffffff;
-  padding: 20px;
-  border-radius: 12px;
+  padding: 25px; /* Padding lebih kecil */
+  border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .form-title {
-  font-size: 1.5rem;
+  font-size: 1.5rem;  /* Sedikit lebih kecil */
   font-weight: bold;
   margin-bottom: 20px;
   color: #333;
@@ -95,10 +102,10 @@
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 12px;  /* Padding lebih kecil */
+  border: 1.5px solid #ccc; /* Border lebih tipis */
   border-radius: 8px;
-  font-size: 1rem;
+  font-size: 1rem; /* Ukuran lebih kecil */
   font-family: "Poppins", sans-serif;
   transition: border-color 0.3s ease;
 }
@@ -112,12 +119,12 @@
 .btn-submit {
   background: #007bff;
   color: white;
-  padding: 10px 20px;
+  padding: 12px 20px; /* Tombol lebih kecil */
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
+  font-size: 1rem; /* Ukuran tombol lebih kecil */
   transition: background-color 0.3s ease;
 }
 
@@ -125,13 +132,34 @@
   background: #0056b3;
 }
 
+/* Responsive Design */
 @media (max-width: 768px) {
+  .contact-section {
+    padding-top: 40px;  /* Jarak ke atas lebih dekat */
+    min-height: 80vh; /* Sedikit lebih kecil */
+  }
+
   .contact-container {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    width: 90%;
   }
 
   .contact-info,
   .contact-form-container {
-    text-align: center;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  /* Prevent Horizontal Scroll */
+  body {
+    overflow-x: hidden;
   }
 }
